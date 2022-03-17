@@ -13,7 +13,7 @@ function UpdateUser() {
   }).then((result) => {
     result.json().then(data => {
       setItens(data)
-      console.log(data)
+      console.log(data);
     })
   })
 

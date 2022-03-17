@@ -4,7 +4,7 @@ import "../CSS/App.css"
 import PickingUpThePosts from "../Component/pickingUpThePosts;"
 
 
-Modal.setAppElement('#root');
+Modal.setAppElement('#root')
 
 const App = () => {
   return (

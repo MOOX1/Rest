@@ -4,7 +4,7 @@ import "../CSS/modal.css"
 
 const HandleModal = ({ texto, onClose }) => {
   const [modalIsOpen, setIsOpen] = useState(false)
-  const [text, setTexto] = useState(texto)
+  const [text, setTexto] = useState(texto);
 
   function handleClose() {
     onClose(text);

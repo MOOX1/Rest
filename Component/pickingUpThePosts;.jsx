@@ -14,7 +14,7 @@ const PickingUpThePosts = () => {
   }
 
   function resetItem() {
-    GetUsers()
+    GetUsers();
   }
 
   useEffect(() => {

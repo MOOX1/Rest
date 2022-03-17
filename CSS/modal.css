@@ -15,7 +15,7 @@
     display: flexbox;
     align-items: center;
     justify-content: center
-}
+};
 
 .modal h1 {
     color: white;
