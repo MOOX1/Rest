@@ -1,0 +1,22 @@
+.modal {
+    position: relative;
+    margin: auto;
+    top: 25%;
+
+    background-color: rgb(51, 49, 49);
+    box-shadow: rgba(0, 0, 0, 0.193) 5px 5px 5px 5px;
+    border:inset rgba(0, 0, 0, 0.727);
+    color:white;
+    
+    border-radius: 10px;
+    width: 400px;
+    height: 120px;
+
+    display: flexbox;
+    align-items: center;
+    justify-content: center
+}
+
+.modal h1 {
+    color: white;
+}
