@@ -7,7 +7,6 @@ export const Post = ({ title, id, userid, atualizarItem, resetItem }) => {
     function onClose(novoTitulo) {
         if (novoTitulo === "") {
             alert("Titulo é Obrigatório")
-            alert("Somente letras no titulo");
         } else {
             atualizarItem(id, novoTitulo);
         }
