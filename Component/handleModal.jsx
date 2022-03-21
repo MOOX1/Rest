@@ -10,19 +10,27 @@ const HandleModal = ({ texto, onClose }) => {
     onClose(text);
   }
 
+  const Enter = () => {
+    addEventListener('keypress', function (event) {
+      if (event.key === 'Enter') {
+        handleClose()
+        setIsOpen(false)
+
+      }
+
+    })
+  }
 
   return (
     <div>
       <button value="edit" onClick={() => setIsOpen(true)}>Edit</button>
-      <Modal className="modal" isOpen={modalIsOpen}>
-        <h1> Edit the title </h1>
-        <br/>
-        <input autoFocus value={text} onChange={e => setTexto(e.target.value)} />
-        <button type="submit" id="sub" onClick={() => {
-          handleClose()
-          setIsOpen(false)
-        }} > Update </button>
-        <button onClick={() => setIsOpen(false)}>Cancel</button>
+      <Modal  className="modal" isOpen={modalIsOpen}>
+        <h1>Edit the title </h1>
+        <br />
+        <input autoFocus required maxLength='70' placeholder="Enter the new title" value={text} onKeyPress={Enter} onChange={e => setTexto(e.target.value)} />
+        <br />
+        <button type="submit" className="update" onClick={() => { handleClose(), setIsOpen(false) }} > Update </button>
+        <button className="cancel" onClick={() => setIsOpen(false)}>Cancel</button>
       </Modal>
     </div>
   )

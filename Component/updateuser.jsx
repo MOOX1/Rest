@@ -17,9 +17,6 @@ function UpdateUser() {
     })
   })
 
-  return (
-    <input type="text" />
-  )
 }
 
 export default UpdateUser;

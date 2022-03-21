@@ -1,15 +1,12 @@
 import React from "react"
 import HandleModal from "./handleModal";
+import "../CSS/post.css"
 
 
-export const Post = ({ title, id, userid, atualizarItem, resetItem }) => {
+export const Post = ({ title, id, userid, atualizarItem }) => {
 
     function onClose(novoTitulo) {
-        if (novoTitulo === "") {
-            alert("Titulo é Obrigatório")
-        } else {
-            atualizarItem(id, novoTitulo);
-        }
+        atualizarItem(id, novoTitulo);
     }
 
 
@@ -17,15 +14,16 @@ export const Post = ({ title, id, userid, atualizarItem, resetItem }) => {
     return (
         <div>
             <HandleModal id={id} texto={title} onClose={onClose} />
-            Title :
+            TITLE :
             {title}
             <br />
             ID :
             {id}
             <br />
-            userId :
+            UserID :
             {userid}
             <br />
+            ______________________________
         </div>
     )
 

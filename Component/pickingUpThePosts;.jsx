@@ -34,7 +34,7 @@ const PickingUpThePosts = () => {
 
   return (
     <div>
-      <button onClick={resetItem}> reset </button>
+      <button onClick={resetItem}> RESET </button>
       <ul id="list">
         {itens.map((item, index) => (
           <li key={index}>
